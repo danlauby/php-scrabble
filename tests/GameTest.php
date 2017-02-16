@@ -81,6 +81,18 @@
             $this->assertEquals(18, $result);
         }
 
+        function test_compareForTen()
+        {
+            // Arrange
+            $test_newGame = new Game;
+            $input_word = "quiz";
+
+            // Act
+            $result = $test_newGame->compareLetters($input_word);
+
+            // Assert
+            $this->assertEquals(22, $result);
+        }
 
 
     }
