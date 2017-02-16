@@ -65,7 +65,7 @@
             $result = $test_newGame->compareLetters($input_word);
 
             // Assert
-            $this->assertEquals(19, $result);
+            $this->assertEquals(10, $result);
         }
 
 
