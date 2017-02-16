@@ -7,13 +7,13 @@
         {
             // Arrange
             $test_newGame = new Game;
-            $input_word = "lol";
+            $input_word = "head";
 
             // Act
             $result = $test_newGame->compareLetters($input_word);
 
             // Assert
-            $this->assertEquals(3, $result);
+            $this->assertEquals(4, $result);
         }
 
         function test_compareForTwo()
@@ -27,6 +27,19 @@
 
             // Assert
             $this->assertEquals(5, $result);
+        }
+
+        function test_compareForThree()
+        {
+            // Arrange
+            $test_newGame = new Game;
+            $input_word = "bump";
+
+            // Act
+            $result = $test_newGame->compareLetters($input_word);
+
+            // Assert
+            $this->assertEquals(10, $result);
         }
 
 
