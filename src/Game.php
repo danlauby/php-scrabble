@@ -18,18 +18,26 @@
         //     return $this->word;
         // }
 
-        function compareForOne($new_word)
+        function compareLetters($new_word)
         {
-            $letters_to_test = ['a', 'e', 'i', 'o', 'u', 'l', 'n', 'r', 's', 't' ];
+            $letters_add_one = ['a', 'e', 'i', 'o', 'u', 'l', 'n', 'r', 's', 't' ];
+            $letters_add_two = ['d', 'g'];
             $input_letters = str_split($new_word);
             $score = 0;
-            $matches = array_intersect($letters_to_test, $input_letters);
+            foreach ($input_letters as $input_letter) {
+                $position_one = array_search($input_letter, $letters_add_one);
+                $position_two = array_search($input_letter, $letters_add_two);
 
-            foreach($matches as $match) {
-                $score++;
+                if ($position_one !== false) {
+                    $score++;
+                } elseif ($position_two !== false) {
+                    $score += 2;
+                }
             }
             return $score;
         }
+
+        
 
     }
  ?>
