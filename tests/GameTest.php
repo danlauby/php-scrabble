@@ -93,7 +93,5 @@
             // Assert
             $this->assertEquals(22, $result);
         }
-
-
     }
  ?>
