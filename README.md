@@ -12,14 +12,15 @@ This program checks for matching letters and adds to players score accordingly.
 
 | Behavior | Input | Output |
 |----------|-------|--------|
+|Set input to lower case|"Hello"|hello|
 |Compare A, E, I, O, U, L, N, R, S, T to user_array (score = 0)|user_array = H, E, A, D|result_array = E, A (add 1 to score for each matching letter) score = 8|
 |Compare D, G to user_array (score = 0)|user_array = D, O, G|result_array = D, G (add 2 to score for each matching letter) score = 5|
 |Compare B, C, M, P to user_array (score = 0)|user_array = B, U, M, P|result_array = B, M, P (add 3 to score for each matching letter) score = 10|
 |Compare F, H, V, W, Y to user_array (score = 0)|user_array = W, A, V, E|result_array = V, W (add 4 to score for each matching letter) score = 10|
-|Compare K to user_array (score = 0)|user_array = M, I, L, K|result_array = K (add 5 to score for each matching letter)|
-|Compare J, X to user_array (score = 0)|user_array = J, I, N, X|result_array = J, X (add 8 to score for each matching letter)|
-|Compare Q, Z to user_array (score = 0)|user_array = Q, U, I, Z|result_array = Q, Z (add 10 to score for each matching letter)|
-|Increment score  for each letter in word according to which array the letter is in|user = 'zinc'|score = 15|
+|Compare K to user_array (score = 0)|user_array = M, I, L, K|result_array = K (add 5 to score for each matching letter) score = 10|
+|Compare J, X to user_array (score = 0)|user_array = J, I, N, X|result_array = J, X (add 8 to score for each matching letter) score = 18|
+|Compare Q, Z to user_array (score = 0)|user_array = Q, U, I, Z|result_array = Q, Z (add 10 to score for each matching letter) score = 22|
+
 
 ## Setup/Installation Requirements
 

@@ -20,7 +20,7 @@
 
         function compareLetters($new_word)
         {
-            $input_letters = str_split($new_word);
+            $input_letters = str_split(strtolower($new_word));
             $score = 0;
 
             $letters_add_one = ['a', 'e', 'i', 'o', 'u', 'l', 'n', 'r', 's', 't' ];
