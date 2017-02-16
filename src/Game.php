@@ -28,6 +28,7 @@
             $letters_add_three = ['b', 'c', 'm', 'p'];
             $letters_add_four = ['f', 'h', 'v', 'w', 'y'];
             $letters_add_five = ['k'];
+            $letters_add_eight = ['j', 'x'];
 
 
             foreach ($input_letters as $input_letter) {
@@ -36,6 +37,7 @@
                 $position_three = array_search($input_letter, $letters_add_three);
                 $position_four = array_search($input_letter, $letters_add_four);
                 $position_five = array_search($input_letter, $letters_add_five);
+                $position_eight = array_search($input_letter, $letters_add_eight);
 
                 if ($position_one !== false) {
                     $score++;
@@ -47,6 +49,8 @@
                     $score += 4;
                 } elseif ($position_five !== false) {
                     $score += 5;
+                } elseif ($position_eight !== false) {
+                    $score += 8;
                 }
             }
             return $score;

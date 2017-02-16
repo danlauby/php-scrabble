@@ -68,6 +68,19 @@
             $this->assertEquals(10, $result);
         }
 
+        function test_compareForEight()
+        {
+            // Arrange
+            $test_newGame = new Game;
+            $input_word = "jinx";
+
+            // Act
+            $result = $test_newGame->compareLetters($input_word);
+
+            // Assert
+            $this->assertEquals(18, $result);
+        }
+
 
 
     }
